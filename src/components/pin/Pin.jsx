@@ -3,7 +3,12 @@ import "./pin.scss";
 import { Marker, Popup } from "react-leaflet";
 
 import { Link } from "react-router-dom";
+import { icon } from "leaflet";
 
+const ICON = icon({
+  iconUrl: "/icon.png",
+  iconSize: [32, 32],
+});
 function Pin({ item }) {
   return (
     <Marker position={[item.latitude, item.longitude]}>
