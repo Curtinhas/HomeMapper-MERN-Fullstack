@@ -15,9 +15,9 @@ function Navbar() {
           <span>HOME MAPPER</span>
         </Link>
         <Link href="/">Home</Link>
-        <Link href="/">About</Link>
+        <Link to="/list">Recommended</Link>
+        <Link to="/profile">Chat</Link>
         <Link href="/">Contact</Link>
-        <Link href="/">Agents</Link>
       </div>
       <div className="right">
         {user ? (
